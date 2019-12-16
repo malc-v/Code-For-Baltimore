@@ -29,8 +29,10 @@ body{
 
 /* Bootstrap CSS */
 
+.btn:hover {color: white !important;}
+
 .navbar-expand-lg .navbar-nav .nav-link {color: #1e6488;}
-.navbar-expand-lg .navbar-nav .nav-link:hover {color: #cf1f42; text-decoration: underline;}
+.navbar-expand-lg .navbar-nav .nav-link:hover {color: #cf1f42 !important; text-decoration: underline;}
 
 .navbar-nav .btn-outline-primary {
     color: #563d7c;
@@ -101,7 +103,7 @@ body{
 
 footer {color: white !important;}
 footer ul {list-style-type: none; padding-left: 0px;}
-footer a:hover {color: #cf1f42;}
+footer a:hover {color: #cf1f42 !important;}
 footer .btn-outline-dark {border: 3px solid; font-size: 17px;}
 @media screen and (max-width: 768px) {
 	footer .btn-outline-dark {border: 2px solid; font-size: 14.4px;}
@@ -188,7 +190,7 @@ footer .btn-outline-dark {border: 3px solid; font-size: 17px;}
 }
 
 #projects h3 a {font-size: 1.75rem; margin-bottom: 10px; color: black;}
-#projects h3 a:hover {color: #cf1f42;}
+#projects h3 a:hover {color: #cf1f42 !important;}
 #projects h5 {margin-bottom: 5px; font-weight: bold;}
 #projects img {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
@@ -243,6 +245,52 @@ footer .btn-outline-dark {border: 3px solid; font-size: 17px;}
 		background-color: #563d7c;
 		color: white;
 }
+
+
+/* For tabs on future Projects page */
+
+  /* Style the tab */
+  #tab {
+  	overflow: hidden;
+    text-align: center;
+  }
+
+
+  /* Style the buttons that are used to open the tab content */
+  #tab button {
+    background-color: #1e6488;
+    color: white;
+    border-bottom: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 30%;
+    /*transform: skew(-22deg);*/
+    border-radius: 5px;
+  }
+
+@media (max-width:767px) {
+
+  #tab .mx-2 {margin-left: .15rem!important; margin-right: .15rem!important;}
+
+}
+  /* Change background color of buttons on hover */
+  #tab button:hover {
+  	background-color: #1e6488;
+  	color: white;
+  }
+
+  /* Create an active/current tablink class */
+  #tab button.active {
+    background-color: #399fd3;
+    color: white;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+  	display: none;
+  	padding: 6px 12px;
+  	outline: none;
+  }
 
 
 
@@ -406,9 +454,8 @@ a{
 	font-weight:700;
 	transition:all 250ms ease-in-out
 }
-a:hover{
-	color: #cf1f42;
-}
+a:hover {color: #cf1f42 !important;}
+
 .site-title{
 	font-size:26px;
 	line-height:56px;
