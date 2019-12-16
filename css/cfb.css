@@ -29,6 +29,8 @@ body{
 
 /* Bootstrap CSS */
 
+.btn:hover {color: white !important;}
+
 .navbar-expand-lg .navbar-nav .nav-link {color: #1e6488;}
 .navbar-expand-lg .navbar-nav .nav-link:hover {color: #cf1f42 !important; text-decoration: underline;}
 
