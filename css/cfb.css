@@ -69,6 +69,11 @@ body{
 .intro-action .btn-outline-primary {color: #1e6488; border: 2px solid #1e6488; font-size: 17px;}
 .intro-action .btn-outline-primary:hover {background-color: #1e6488; color: white;}
 
+#caroNavIndicators a:hover {color: white !important; }
+
+
+#caroNavIndicators .carousel-inner a:hover { color: black !important; }
+
 .carousel {z-index: 99;}
 .carousel-inner {
 	height: 100%;
