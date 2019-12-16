@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -20,6 +21,10 @@
     <link rel="stylesheet" href="css/cfb.css">
     <link rel="canonical" href="http://codeforbaltimore.org/">
     <link rel="alternate" type="application/rss+xml" title="Code For Baltimore" href="http://codeforbaltimore.org/feed.xml" />
+
+<style>
+
+</style>
 
   </head>
 
@@ -55,14 +60,14 @@
 
 
 <!-- Tab links -->
-<div><p></p></div>
-<div class="container">    
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Active')" id="defaultOpen">Active Projects</button>
-        <button class="tablinks" onclick="openTab(event, 'Completed')">Completed Projects</button>
-        <button class="tablinks" onclick="openTab(event, 'How')">How Projects Work</button>
+
+<div class="container py-4">
+    <div id="tab" class="mx-auto py-4">
+        <button class="tablinks mx-2" onclick="openTab(event, 'Active')" id="defaultOpen">Active Projects</button>
+        <button class="tablinks mx-2" onclick="openTab(event, 'Completed')">Completed Projects</button>
+        <button class="tablinks mx-2" onclick="openTab(event, 'How')">How Projects Work</button>
       </div>
-      
+
       <!-- Tab content -->
 
       <!--Tab 1: Active Projects-->
@@ -73,7 +78,7 @@
                 <div class="col-sm-12">
                   <h2 class="display-4">Active projects</h2>
                 </div>
-        
+
                 <div class="col-lg-5 my-auto img-hov">
                   <a href="https://github.com/CodeForBaltimore/KnowYourRightsBaltimore"><img src="images/know-your-rights-1200x1100.jpg" class="img-fluid" alt="Know Your Rights Code for Baltimore project"></a>
                 </div>
@@ -105,8 +110,8 @@
                 <div class="col-sm-12 py-2 my-auto">
                   <hr/>
                 </div>
-        
-        
+
+
                 <div class="col-lg-5 my-auto img-hov">
                   <a href="https://github.com/syncthecity"><img src="images/sync-city-1200x1100.jpg" class="img-fluid" alt="Sync the City Code for Baltimore project"></a>
                 </div>
@@ -142,14 +147,14 @@
       <div class="col-sm-12 py-4 my-auto text-center">
             <a role="button" class="btn btn-outline-primary text-center" href="#">Load more</a>
           </div>
-  
+
         </div>
 
     <!--Tab 2: Completed Projects-->
-      <div id="Completed" class="tabcontent"> 
+      <div id="Completed" class="tabcontent">
 
             <div class="row py-2" id="projects">
-    
+
                     <div class="col-sm-12">
                       <h2 class="display-4">Completed Projects</h2>
                     </div>
@@ -188,13 +193,13 @@
             <div class="col-sm-12 py-4 my-auto text-center">
                   <a role="button" class="btn btn-outline-primary text-center" href="#">Load more</a>
                 </div>
-        
+
               </div>
 
         <!--Tab 3: How Projects Work-->
-        <div id="How" class="tabcontent"> 
+        <div id="How" class="tabcontent">
 
-            <div class="row py-2"> 
+            <div class="row py-2">
 
                             <div class="col-sm-12 py-2 my-auto">
                               <h3 class="display-4">How they work</h3>
@@ -216,7 +221,7 @@
                               </ul></div>
                               </p>
                             </div>
-                    
+
                           </div>
                         </div>
 
@@ -243,7 +248,7 @@
             <path d="M 66,100 100,100 100,66 Z" style="fill:#cf1f42"/>
           </g>
         </svg>
-  
+
         <div class="container">
           <div class="row">
             <div class="col-sm">
@@ -274,9 +279,9 @@
             </div>
           </div>
         </div>
-  
+
     </footer>
-    
+
     <!--For tabs on future Projects page-->
     <script>
         function openTab(evt, tabName) {
@@ -300,7 +305,7 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
             }
-            
+
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
